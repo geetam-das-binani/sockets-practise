@@ -14,7 +14,7 @@ const App = () => {
     });
     socket.on("recieved_message", (data) => {
       setMessage([...message, data.text]);
-      console.log(message);
+      
     });
   }, []);
   const sendMessage = () => {
